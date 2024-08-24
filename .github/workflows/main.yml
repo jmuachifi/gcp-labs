@@ -20,7 +20,7 @@ jobs:
 
     - name: Deploy to GCP
       run: |
-        ssh -o StrictHostKeyChecking=no jmuachifi@34.72.145.222 << 'EOF'
+        ssh -o StrictHostKeyChecking=no web-app@34.72.145.222 << 'EOF'
         cd /var/www/html/
         # Copy the HTML file from the GitHub repo to the web server's root directory
         cp ~/gcp-labs/lab01/gcp-lab.html /var/www/html/
